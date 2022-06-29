@@ -11,7 +11,7 @@ const loopRouteItem2Menu = (routeConfig: IRouterConfig[], basePath: string = '')
   routeConfig.map((item) => ({
     label: item.pageConfig?.title ?? '-',
     key: basePath + item.path,
-    children: item.children ? loopRouteItem2Menu(item.children, item.path) : '',
+    children: item.children ? loopRouteItem2Menu(item.children, basePath + item.path) : '',
   }));
 
 export default function (props) {

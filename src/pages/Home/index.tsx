@@ -5,8 +5,8 @@ const Home = () => {
   return (
     <>
       <Guide />
-      <Link to={'/a'}>Component A</Link>
-      <Link to={'/b'}>Component B</Link>
+      <Link to={'/component/a'}>Component A</Link>
+      <Link to={'/component/b'}>Component B</Link>
     </>
   );
 };
